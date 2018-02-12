@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "按排序顺序打印二进制树"
-date: 2018-02-12
+date: 2018-02-13
 ---
 
 在这里，我们可以使用两个优先队列以排序顺序进行打印。我们创建一个空队列q和两个优先级队列current_level和next_level。我们使用NULL作为两个级别之间的分隔符。每当我们在普通级别的遍历中遇到NULL时，我们交换current_level和next_level。
