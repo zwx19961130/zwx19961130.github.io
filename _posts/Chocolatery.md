@@ -1,3 +1,10 @@
+---
+layout: post
+title: "Chocolatery"
+date: 2018-02-18
+---
+
+
 # Chocolatery
 
 发现一个比较好用的windows上的包管理工具：Chocolatery. 
