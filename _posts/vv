@@ -1,3 +1,10 @@
+---
+layout: post
+title: "用git的时候又让输入用户名和密码"
+date: 2018-02-25
+---
+
+
 今天春节打开电脑发现桌面太乱了，想把前面数学建模查的资料的文件都整理一下。打算放到GitHub上。但是用git的时候又出现了问题。又要在terminal输入username和password。开始我用的是
 git config --global user.name "zwx19961130"
 git config --global user.email "zwx19961130@icloud.com"
