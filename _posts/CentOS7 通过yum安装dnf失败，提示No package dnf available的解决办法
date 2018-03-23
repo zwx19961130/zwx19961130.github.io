@@ -1,3 +1,10 @@
+---
+layout: post
+title: "CentOS7 通过yum安装dnf失败，提示No package dnf available的解决办法"
+date: 2018-03-23
+---
+
+
 想在自己的笔记本CentOS7上安装dnf玩玩儿，但是根据百度出来的方法没有成功
 	
 	yum install dnf
