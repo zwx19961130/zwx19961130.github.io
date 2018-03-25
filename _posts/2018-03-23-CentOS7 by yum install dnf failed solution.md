@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "CentOS7 by yum install dnf failed，suggest that "No package dnf available"' solution"
+title: "CentOS7 by yum install dnf failed solution"
 date: 2018-03-23
 ---
 
