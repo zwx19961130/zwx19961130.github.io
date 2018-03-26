@@ -1,12 +1,12 @@
 # Basic
-title: 潘柏信
-subtitle: 个人站
-description: 欢迎来到我的个人站~
+title: 张维先
+subtitle: Blog
+description: Welcome to my blog~
 # 头像里面的标题
-avatarTitle: leopardpan
+avatarTitle: Bilal
 # 头像里面的描述
-avatarDesc: iOS / 机器学习
-url: "http://baixin.io"
+avatarDesc: Javascript / Machine Learning
+url: "http://zwx19961130.github.io"
 
 # Comment
 comment:
@@ -16,9 +16,9 @@ comment:
 # Social
 social:
     weibo: 5366874726 
-    github: leopardpan
+    github: zwx19961130
     # twitter: 
-    mail: leopardpan@icloud.com
+    mail: zwx19961130@icloud.com
 
 # 百度统计 
 # 使用博客模板请去掉或者更换 id 
