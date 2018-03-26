@@ -2,6 +2,8 @@
 layout: post
 title: "Chocolatery"
 date: 2018-02-18
+description: "Package management in windows"
+tag: Linix
 ---
 
 
