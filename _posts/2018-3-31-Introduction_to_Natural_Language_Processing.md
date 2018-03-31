@@ -263,7 +263,7 @@ Our goal is to train a linear regression algorithm that predicts the number of u
 While there are several ways to accomplish this, we'll use a bag of words model. A bag of words model represents each piece of text as a numerical vector. 
 We'll examine each step in the bag of words process in this mission. For now, here's a high-level diagram showing how two sentences, I rode my horse to Berlin. and You rode my horse to Berlin in the winter., convert to a bag of words:
      
-![tokenizing-the-headlines.svg](https://github.com/zwx19961130/zwx19961130.github.io/blob/master/images/posts/2018_3_31/tokenizing-the-headlines.svg) 
+![tokenizing-the-headlines.svg](http://ok21u0ynz.bkt.clouddn.com/2018_3_31_tokenizing-the-headlines.svg) 
 
 The first step in creating a bag of words model is tokenization. In tokenization, we break a sentence up into disconnected words.
 Here's a diagram in which we tokenize the two sentences we mentioned above:
