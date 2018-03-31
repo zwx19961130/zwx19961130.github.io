@@ -177,7 +177,7 @@ plt.show()
 ```
 
 
-![png](../images/posts/Kaggle Titanic first commit & machine learning basics/output_5_0.png)
+![png](../images/posts/2018_3_25/output_5_0.png)
 
 
 
@@ -240,7 +240,7 @@ plt.show()
 ```
 
 
-![png](../images/posts/Kaggle Titanic first commit & machine learning basics/output_7_0.png)
+![png](../images/posts/2018_3_25/output_7_0.png)
 
 
 
@@ -757,7 +757,7 @@ plt.show()
 ```
 
 
-![png](../images/posts/Kaggle Titanic first commit & machine learning basics/output_15_0.png)
+![png](../images/posts/2018_3_25/output_15_0.png)
 
 
 So far we have identified three columns that may be useful for predicting survival:
