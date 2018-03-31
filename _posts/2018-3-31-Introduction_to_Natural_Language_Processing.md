@@ -263,11 +263,11 @@ Our goal is to train a linear regression algorithm that predicts the number of u
 While there are several ways to accomplish this, we'll use a bag of words model. A bag of words model represents each piece of text as a numerical vector. 
 We'll examine each step in the bag of words process in this mission. For now, here's a high-level diagram showing how two sentences, I rode my horse to Berlin. and You rode my horse to Berlin in the winter., convert to a bag of words:
      
-![tokenizing-the-headlines.svg](attachment:tokenizing-the-headlines.svg) 
+![tokenizing-the-headlines.svg](https://github.com/zwx19961130/zwx19961130.github.io/blob/master/images/posts/2018_3_31/tokenizing-the-headlines.svg) 
 
 The first step in creating a bag of words model is tokenization. In tokenization, we break a sentence up into disconnected words.
 Here's a diagram in which we tokenize the two sentences we mentioned above:
-![tokenizing-the-headlines2.svg](attachment:tokenizing-the-headlines2.svg)    
+![tokenizing-the-headlines2.svg](https://github.com/zwx19961130/zwx19961130.github.io/blob/master/images/posts/2018_3_31/tokenizing-the-headlines2.svg)    
 As you can see, all we're doing is splitting each sentence into a list of individual words, or tokens. The split occurs on the space character (" ").
 
 - Split each headline into individual words on the space character(" "), and append the resulting list to tokenized_headlines. 
@@ -286,7 +286,7 @@ We now have tokens, but we need to process them a bit to make our predictions mo
 
 We can do this by lowercasing (which will convert Berlin to berlin), and also by removing punctuation (so Berlin. becomes Berlin).
 
-![preprocessing-tokens-to-increase-accuracy.svg](attachment:preprocessing-tokens-to-increase-accuracy.svg)
+![preprocessing-tokens-to-increase-accuracy.svg](https://github.com/zwx19961130/zwx19961130.github.io/blob/master/images/posts/2018_3_31/preprocessing-tokens-to-increase-accuracy.svg)
 
 Preprocessing doesn't have to be perfect, but the more we can help the computer group the same word together, the higher our prediction accuracy will be. Take a look through your tokens, and see if there are any instances of the same word that you haven't grouped together.
 
@@ -314,7 +314,7 @@ for item in tokenized_headlines:
 ```
 
 Now that we have our tokens, we can begin converting the sentences to their numerical representations. First, we'll retrieve all of the unique words from all of the headlines. Then, we'll create a matrix, and assign those words as the column headers. We'll initialize all of the values in the matrix to 0.
-![assembling-a-matrix-of-unique-words.svg](attachment:assembling-a-matrix-of-unique-words.svg)
+![assembling-a-matrix-of-unique-words.svg](https://github.com/zwx19961130/zwx19961130.github.io/blob/master/images/posts/2018_3_31/assembling-a-matrix-of-unique-words.svg)
 
 We'll use a pandas dataframe instead of a NumPy matrix. We can create a dataframe with all zero values using this syntax: 
 
@@ -353,7 +353,7 @@ counts = pd.DataFrame(0, index=np.arange(len(clean_tokenized)), columns=unique_t
 
 Now that we have a matrix where all values are 0, we need to fill in the correct counts for each cell. This involves going through each set of tokens, and incrementing the column counters in the appropriate row.
 
-![counting-token-occurrences.svg](attachment:counting-token-occurrences.svg)
+![counting-token-occurrences.svg](https://github.com/zwx19961130/zwx19961130.github.io/blob/master/images/posts/2018_3_31/counting-token-occurrences.svg)
 
 When we're finished, we'll have a row vector for each headline that tells us how many times each token occured in that headline.
 
