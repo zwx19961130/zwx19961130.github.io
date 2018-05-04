@@ -286,7 +286,7 @@ We now have tokens, but we need to process them a bit to make our predictions mo
 
 We can do this by lowercasing (which will convert Berlin to berlin), and also by removing punctuation (so Berlin. becomes Berlin).
 
-![preprocessing-tokens-to-increase-accuracy.svg](https://github.com/zwx19961130/zwx19961130.github.io/blob/master/images/posts/2018_3_31/preprocessing-tokens-to-increase-accuracy.svg)
+![preprocessing-tokens-to-increase-accuracy.svg](/images/posts/2018_3_31/preprocessing-tokens-to-increase-accuracy.svg)
 
 Preprocessing doesn't have to be perfect, but the more we can help the computer group the same word together, the higher our prediction accuracy will be. Take a look through your tokens, and see if there are any instances of the same word that you haven't grouped together.
 
@@ -314,7 +314,7 @@ for item in tokenized_headlines:
 ```
 
 Now that we have our tokens, we can begin converting the sentences to their numerical representations. First, we'll retrieve all of the unique words from all of the headlines. Then, we'll create a matrix, and assign those words as the column headers. We'll initialize all of the values in the matrix to 0.
-![assembling-a-matrix-of-unique-words.svg](https://github.com/zwx19961130/zwx19961130.github.io/blob/master/images/posts/2018_3_31/assembling-a-matrix-of-unique-words.svg)
+![assembling-a-matrix-of-unique-words.svg](/images/posts/2018_3_31/assembling-a-matrix-of-unique-words.svg)
 
 We'll use a pandas dataframe instead of a NumPy matrix. We can create a dataframe with all zero values using this syntax: 
 
@@ -353,7 +353,7 @@ counts = pd.DataFrame(0, index=np.arange(len(clean_tokenized)), columns=unique_t
 
 Now that we have a matrix where all values are 0, we need to fill in the correct counts for each cell. This involves going through each set of tokens, and incrementing the column counters in the appropriate row.
 
-![counting-token-occurrences.svg](https://github.com/zwx19961130/zwx19961130.github.io/blob/master/images/posts/2018_3_31/counting-token-occurrences.svg)
+![counting-token-occurrences.svg](/images/posts/2018_3_31/counting-token-occurrences.svg)
 
 When we're finished, we'll have a row vector for each headline that tells us how many times each token occured in that headline.
 
